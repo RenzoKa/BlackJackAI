@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+</head>
+<!-- Código feito autoralmente por Renzo Kawase, vulgo, RenzoKa -->
+<body>
+    <header>BlackJack AI</header>
+    <main>
+        <div id="house"></div>
+        <div id="house_score">21</div>
+        <button id="reset">Reset Game</button>
+        <div id="available_cards">
+            <button class="card" data-value="A♠">A♠</button>
+            <button class="card" data-value="2♠">2♠</button>
+            <button class="card" data-value="3♠">3♠</button>
+            <button class="card" data-value="4♠">4♠</button>
+            <button class="card" data-value="5♠">5♠</button>
+            <button class="card" data-value="6♠">6♠</button>
+            <button class="card" data-value="7♠">7♠</button>
+            <button class="card" data-value="8♠">8♠</button>
+            <button class="card" data-value="9♠">9♠</button>
+            <button class="card" data-value="10♠">10♠</button>
+            <button class="card" data-value="J♠">J♠</button>
+            <button class="card" data-value="Q♠">Q♠</button>
+            <button class="card" data-value="K♠">K♠</button>
+            <button class="card" data-value="A♥">A♥</button>
+            <button class="card" data-value="2♥">2♥</button>
+            <button class="card" data-value="3♥">3♥</button>
+            <button class="card" data-value="4♥">4♥</button>
+            <button class="card" data-value="5♥">5♥</button>
+            <button class="card" data-value="6♥">6♥</button>
+            <button class="card" data-value="7♥">7♥</button>
+            <button class="card" data-value="8♥">8♥</button>
+            <button class="card" data-value="9♥">9♥</button>
+            <button class="card" data-value="10♥">10♥</button>
+            <button class="card" data-value="J♥">J♥</button>
+            <button class="card" data-value="Q♥">Q♥</button>
+            <button class="card" data-value="K♥">K♥</button>
+            <button class="card" data-value="A♣">A♣</button>
+            <button class="card" data-value="2♣">2♣</button>
+            <button class="card" data-value="3♣">3♣</button>
+            <button class="card" data-value="4♣">4♣</button>
+            <button class="card" data-value="5♣">5♣</button>
+            <button class="card" data-value="6♣">6♣</button>
+            <button class="card" data-value="7♣">7♣</button>
+            <button class="card" data-value="8♣">8♣</button>
+            <button class="card" data-value="9♣">9♣</button>
+            <button class="card" data-value="10♣">10♣</button>
+            <button class="card" data-value="J♣">J♣</button>
+            <button class="card" data-value="Q♣">Q♣</button>
+            <button class="card" data-value="K♣">K♣</button>
+            <button class="card" data-value="A♦">A♦</button>
+            <button class="card" data-value="2♦">2♦</button>
+            <button class="card" data-value="3♦">3♦</button>
+            <button class="card" data-value="4♦">4♦</button>
+            <button class="card" data-value="5♦">5♦</button>
+            <button class="card" data-value="6♦">6♦</button>
+            <button class="card" data-value="7♦">7♦</button>
+            <button class="card" data-value="8♦">8♦</button>
+            <button class="card" data-value="9♦">9♦</button>
+            <button class="card" data-value="10♦">10♦</button>
+            <button class="card" data-value="J♦">J♦</button>
+            <button class="card" data-value="Q♦">Q♦</button>
+            <button class="card" data-value="K♦">K♦</button>
+        </div>
+        <div id="message_container">
+            <img src="message.png" alt="">
+            <div id="message">Pick the 2 cards the dealer has</div>
+        </div>
+        <button id="hit_chance_container">
+            <img src="luck.png" alt="">
+            <div id="hit_chance">77%</div>
+        </button>
+        <dialog id="dialog">Aqui vai a Fração que representa a chance de não estourar</dialog>
+        <div id="player_score">21</div>
+        <div id="player"></div>
+    </main>
+    <footer>
+        <p>Created by <strong>Renzo</strong></p>
+        <div>
+            <img class="contact" src="github.png" alt="">
+            <a href="https://github.com/RenzoKa" target="_blank">RenzoKa</a>
+        </div>
+        <div>
+            <img class="contact" src="gmail.png" alt="">
+            <a href="mailto:renzokawase2008@gmail.com">renzokawase2008@gmail.com</a>
+        </div>
+        <div>
+            <img class="contact" src="instagram.png" alt="">
+            <a href="https://www.instagram.com/renzokawase?igsh=MWV6MWkwamh3dHB2eg==" target="_blank">Renzo Kawase</a>
+        </div>
+    </footer>
+    <script src="blackjack_ai.js"></script>
+</body>
+</html>
