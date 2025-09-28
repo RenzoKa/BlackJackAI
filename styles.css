@@ -188,7 +188,10 @@ footer {
     color: black;
     background-color: white;
     margin-bottom: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
     padding-bottom: 10px;
+    right: 0px;
 }
 
 footer p {
@@ -208,3 +211,8 @@ dialog {
     left: 47%;
 }
 
+@media screen and (max-width: 270px;) {
+    #player {
+        max-width: 90vw;
+    }
+}
