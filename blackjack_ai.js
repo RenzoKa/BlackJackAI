@@ -169,18 +169,32 @@ const updateHitChanceDisplay = () => {
     `;
 }
 
+if (lang.includes("en")) {
+    messageDiv.innerText = "Pick the cards for the dealer";
+} else {
+    messageDiv.innerText = "Escolha as cartas da casa";
+};
+
 const addCard = (card) => {
     const cardValue = card.getAttribute("data-value");
     const cardKey = cardValueToKey(cardValue);
 
     console.log(cardValue);
     if (Object.keys(dealerHand).length < 2) {
-        messageDiv.innerText = "One more";
+        if (lang.includes("en")) {
+            messageDiv.innerText = "One more";
+        } else {
+            messageDiv.innerText = "Mais uma carta";
+        }
         dealerHand[cardKey] = cardsOBJ[cardKey];
         house.innerHTML += `<div class="card" data-value="${cardValue}">${cardValue}</div>`;
         availableCardsDiv.removeChild(card);
     } else {
-        messageDiv.innerText = "Pick the cards for the player";
+        if (lang.includes("en")) {
+            messageDiv.innerText = "Pick the cards for the player";
+        } else {
+            messageDiv.innerText = "Selecione as cartas do jogador";
+        }
         playerHand[cardKey] = cardsOBJ[cardKey];
         player.innerHTML += `<div class="card" data-value="${cardValue}">${cardValue}</div>`;
         availableCardsDiv.removeChild(card);
